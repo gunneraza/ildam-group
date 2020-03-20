@@ -1,0 +1,19 @@
+.section-feature {
+
+
+    .feature-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+        .feature-card {
+            width: 48%;
+
+            @media(max-width: 576px) {
+                width: 100%;
+            }
+        }
+    }
+}
