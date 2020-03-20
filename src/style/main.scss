@@ -8,11 +8,12 @@
 //components
 @import "components/section.scss";
 
-//partials
-
+//layouts
+@import "layouts/home.scss";
 
 
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }

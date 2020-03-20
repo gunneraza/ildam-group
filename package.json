@@ -54,6 +54,7 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1",
+    "parallax-js": "^3.1.0"
   }
 }
