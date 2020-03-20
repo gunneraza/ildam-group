@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/utilities";
+
+//utils
+@import "utils/variables.scss";
+
+//components
+@import "components/section.scss";
+
+//partials
+
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
