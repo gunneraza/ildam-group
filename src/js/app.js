@@ -3,4 +3,4 @@ if (module.hot) {
 }
 
 import Parallax from 'parallax-js';
-
+import Isotope from 'isotope-layout';
