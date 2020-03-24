@@ -1,6 +1,8 @@
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/bootstrap-grid";
 @import "~bootstrap/scss/utilities";
+@import "libs/swiper.css";
+
 
 //utils
 @import "utils/variables.scss";
@@ -8,11 +10,13 @@
 //components
 @import "components/section.scss";
 @import "components/feature-card.scss";
+@import "components/person-card.scss";
 
 //layouts
 @import "layouts/home.scss";
 @import "layouts/features.scss";
 @import "layouts/services.scss";
+@import "layouts/team.scss";
 @import "layouts/footer.scss";
 
 
