@@ -2,55 +2,78 @@
 
 }
 
-.service-nav {
-    margin-bottom: 20px;
-
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        padding: 0px;
-        margin: 0px;
-        list-style: none;
-    }
+.services-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 50px;
 
     &__item {
-        font-size: 16px;
+        font-size: 14px;
+        color: rgb(136, 136, 136);
         cursor: pointer;
-        transition: 200ms ease;
 
-        &:hover {
-            color: $red;
-            
+        @media(max-width: 1200px) {
+            font-size: 12px;
+        }
+
+        @media(max-width: 768px) {
+            margin: 10px;
         }
     }
 
-    &__item.is-checked {
-        font-weight: 700;
+    &__item.active {
+        color: #000;
+        border-bottom: 1px solid $red;
+        
 
-        &::after {
-            display: block;
-            content: '';
-            width: 100%;
-            height: 2px;
+        @media(max-width: 768px) {
+            padding: 6px;
+            border-bottom: none;
             background-color: $red;
-            border-radius: 2px;
-            margin-top: 2px;
+            border-radius: 10px;
+            color: #fff;
         }
+    }
+
+    @media(max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
+
 
 .services {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 20px;
 
-    &-item {
-        width: 31%;
-        border-radius: 4px;
-        margin: 10px;
 
-        img {
+    &__item {
+        width: 32%;
+        height: 340px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 10px;
+        margin: 8px;
+
+        @media(max-width: 1200px) {
+            width: 31%;
+            margin: 4px;
+            height: 200px;
+        }
+
+        @media(max-width: 768px) {
+            width: 30%;
+            height: 150px;
+        }
+
+        @media(max-width: 576px) {
             width: 100%;
+            height: 200px;
         }
     }
 }
+

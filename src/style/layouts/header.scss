@@ -1,0 +1,132 @@
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #ccc;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    img {
+        width: 100px;
+
+        @media(max-width: 576px) {
+            width: 70px;
+        }
+    }
+}
+
+.navigation {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    margin-right: 100px;
+
+    @media(max-width: 1200px) {
+        margin-right: 50px;
+    }
+
+    @media(max-width: 768px) {
+        margin-right: 0px;
+    }
+
+    &__item {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        @media(max-width: 576px) {
+            margin-right: 10px;
+        }
+    }
+
+    &__link {
+        color: #000;
+        font-size: 18px;
+        text-decoration: none;
+        outline: none;
+        font-weight: 500;
+        transition: 200ms ease;
+
+        @media(max-width: 992px) {
+            font-size: 14px;
+        }
+
+        @media(max-width: 576px) {
+            font-size: 12px;
+        }
+
+        &:hover {
+            color: $red;
+            text-decoration: none;
+            
+        }
+    }
+}
+
+.header-info {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+
+    @media(max-width: 992px) {
+        display: none;
+    }
+
+    &__item {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    &__link {
+        color: #000;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        transition: 200ms ease;
+
+        @media(max-width: 992px) {
+            font-size: 14px;
+        }
+        
+
+        svg {
+            width: 18px;
+            height: 18px;
+            color: #2F3761;
+            margin-right: 10px;
+            transition: 200ms ease;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $red;
+        }
+
+        &:hover svg {
+            fill: $red;
+        }
+    }
+}

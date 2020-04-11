@@ -1,6 +1,6 @@
 .feature-card {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
     border-radius: 15px;
@@ -11,7 +11,10 @@
     }
 
     &__img {
-        width: 20%;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        margin-right: 10px;
 
         svg {
             width: 80px;
@@ -23,8 +26,8 @@
             }
 
             @media(max-width: 768px) {
-                width: 40px;
-                height: 40px;;
+                width: 50px;
+                height: 50px;;
             }
 
             @media(max-width: 576px) {
@@ -35,15 +38,7 @@
     }
 
     &__description {
-        margin-left: 20px;
-
-        @media(max-width: 768px) {
-            margin-left: 10px;
-        }
-
-        @media(max-width: 576px) {
-            margin-left: 10px;
-        }
+        width: 70%;
     }
 
     &__title {
@@ -70,8 +65,8 @@
             font-size: 12px;
         }
 
-        @media(max-width: 768px) {
-            font-size: 8px;
+        @media(max-width: 576px) {
+            font-size: 14px;
         }
     }
 }

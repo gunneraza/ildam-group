@@ -10,7 +10,7 @@
     }
 }
 
-.feedback {
+.footer-info {
     width: 48%;
     padding: 30px 60px;
     display: flex;
@@ -22,7 +22,7 @@
     background-size: cover;
 
 
-    &-title {
+    &__title {
         color: #fff;
         font-family: 'Fredoka One';
         font-size: 45px;
@@ -37,7 +37,7 @@
         }
     }
 
-    &-item {
+    &__item {
         margin-bottom: 20px;
 
         a {
@@ -63,6 +63,7 @@
             height: 30px;
             fill: #fff;
             margin-right: 10px;
+            transition: 200ms ease;
 
             @media(max-width: 1200px) {
                 width: 26px;
@@ -74,6 +75,14 @@
                 height: 20px;
             }
         }
+    }
+
+    &__item:hover svg {
+        fill: $blue;
+    }
+
+    &__item:hover a {
+        color: $blue;
     }
 
     @media(max-width: 768px) {
@@ -104,14 +113,13 @@
     &__item {
         margin-right: 20px;
 
-        a {
-
-        }
+        
 
         svg {
             width: 30px;
             height: 30px;
             fill: #fff;
+            transition: 200ms ease;
 
             @media(max-width: 1200px) {
                 width: 26px;
@@ -122,6 +130,10 @@
                 width: 20px;
                 height: 20px;
             }
+        }
+
+        a:hover svg {
+            fill: $blue;
         }
     }
 }

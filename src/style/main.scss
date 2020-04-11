@@ -1,7 +1,15 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1360px
+);
+
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/bootstrap-grid";
 @import "~bootstrap/scss/utilities";
 @import "libs/swiper.css";
+@import "libs/animate.css";
 
 
 //utils
@@ -9,19 +17,36 @@
 
 //components
 @import "components/section.scss";
+@import "components/clouds.scss";
 @import "components/feature-card.scss";
 @import "components/person-card.scss";
 
 //layouts
+@import "layouts/header.scss";
 @import "layouts/home.scss";
+@import "layouts/about.scss";
 @import "layouts/features.scss";
 @import "layouts/services.scss";
 @import "layouts/team.scss";
+@import "layouts/feedback.scss";
 @import "layouts/footer.scss";
 
 
+button:active, button:focus {
+  outline: none;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
+

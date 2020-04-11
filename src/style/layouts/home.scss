@@ -19,11 +19,30 @@
 
 
     .home-description {
-        width: 60%;
+        width: 70%;
         margin-bottom: 100px;
+        position: absolute;
+
+        &__copyright {
+            display: block;
+            width: 100%;
+            text-align: right;
+            font-weight: 800;
+            padding-right: 68px;
+
+            @media(max-width: 576px) {
+                padding-right: 0px;
+                font-size: 14px;
+            }
+        }
 
         &__header {
             margin-bottom: 20px;
+            padding: 0px 70px;
+
+            @media(max-width: 576px) {
+                padding: 0px;
+            }
         }
 
         &__footer {
@@ -39,6 +58,14 @@
             text-align: center;
             font-size: 80px;
             letter-spacing: 0.3em;
+
+            @media(max-width: 992px) {
+                font-size: 60px;
+            }
+
+            @media(max-width: 576px) {
+                font-size: 38px;
+            }
         }
 
         &__subtitle {
@@ -46,6 +73,14 @@
             color: #333333;
             font-size: 35px;
             text-align: right;
+
+            @media(max-width: 992px) {
+                font-size: 30px;
+            }
+
+            @media(max-width: 576px) {
+                font-size: 20px;
+            }
         }
 
         &__text {
@@ -54,6 +89,34 @@
             color: #4F4F4F;
             line-height: 20px;
             font-weight: 500;
+
+            @media(max-width: 1400px) {
+                padding: 0px 80px;
+            }
+
+            @media(max-width: 1200px) {
+                padding: 0px 10px;
+            }
+
+            @media(max-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media(max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+
+        @media(max-width: 1400px) {
+            width: 70%;
+        }
+
+        @media(max-width: 992px) {
+            width: 80%;
+        }
+
+        @media(max-width: 768px) {
+            width: 100%;
         }
     }
 
@@ -76,6 +139,11 @@
     &:hover {
         box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25); 
     }
+
+    @media(max-width: 576px) {
+        font-size: 12px;
+        padding: 8px 14px; 
+    }
 }
 
 .home-arrow {
@@ -95,10 +163,118 @@
 
 
     svg {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         fill: #fff;
         transform: rotate(90deg);
+
+        @media(max-width: 576px) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    @media(max-width: 576px) {
+        width: 40px;
+        height: 40px;
+        margin-left: -20px;
     }
 }
 
+
+
+.home-clouds_1 {
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    overflow: hidden;
+
+    @media(max-width: 768px) {
+        opacity: 0;
+    }
+}
+
+.home-cloud {
+    background-image: url('../static/images/elements/cloud3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+}
+
+
+.kids {
+    width: 100vw;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+
+    @media(max-width: 576px) {
+        height: 100vh;
+    }
+}
+
+.boy {
+    width: 300px;
+    height: 400px;
+    background-image: url('../static/images/elements/boy.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+    @media(max-width: 1400px) {
+        width: 250px;
+        height: 300px;
+        top: 30%;
+        left: 5%;
+    }
+
+    @media(max-width: 992px) {
+        top: 20%;
+        left: 0%;
+    }
+
+    @media(max-width: 768px) {
+        left: -10%;
+        top: 30%;
+        height: 280px;
+        widows: 220px;
+    }
+
+    @media(max-width: 576px) {
+        left: -24%;
+        top: 50%;
+        transform: rotate(-30deg);
+    
+    }
+}
+
+.girl {
+    width: 200px;
+    height: 300px;
+    background-image: url('../static/images/elements/girl.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+
+    @media(max-width: 992px) {
+        top: 0%;
+        right: 0%;
+    }
+
+    @media(max-width: 768px) {
+        height: 250px;
+        right: -10%;
+    }
+
+    @media(max-width: 576px) {
+        height: 200px;
+        width: 150px;
+    }
+}
